@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33366f118fc441e8a5985c060dae814, type: 3}
+  m_Name: DatabaseGeneral
+  m_EditorClassIdentifier: 
+  generalRenderMode: 0
+  prefabSimpleMessage: {fileID: 1362247407873064, guid: aba6cefc3418744bb99053e735f57f79, type: 3}
+  prefabFloatingMessage: {fileID: 1362247407873064, guid: 03f303a0c5c66485fbc606efe0f4c276, type: 3}
+  prefabTouchstick: {fileID: 1105435961739916, guid: ca6a5232f31214ff6906600951f71805, type: 3}
+  forceDisplayInEditor: 0
+  touchstickMode: 0
+  saveScenes: 1
+  provider: {fileID: 11400000, guid: 1f9bc473c42a74d268e54adf54fbcad8, type: 2}
+  toolbarPositionX: 10
+  toolbarPositionY: 10
+  musicAudioMixer: {fileID: 8901067423595752867, guid: 66e4283bcd70f29428b7098135e3357a, type: 2}
+  soundAudioMixer: {fileID: 8448899552078114577, guid: 66e4283bcd70f29428b7098135e3357a, type: 2}
+  voiceAudioMixer: {fileID: -6657974878504955220, guid: 66e4283bcd70f29428b7098135e3357a, type: 2}
