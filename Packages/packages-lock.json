@@ -17,6 +17,13 @@
       "dependencies": {},
       "hash": "156fb2a429208dd1fe8ccb2aee199bb8cda7658f"
     },
+    "com.rmvcc": {
+      "version": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.rmvcc",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b171dbf4ef7480a6b045ddcf2b9cd5b4f7b4157d"
+    },
     "com.thirdparty.mybox": {
       "version": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/EditorModules/com.thirdparty.mybox",
       "depth": 0,

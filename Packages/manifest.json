@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "com.components.ui": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.components.ui",
+    "com.datastructures": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.datastructures",
+    "com.rmvcc": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.rmvcc",
+    "com.thirdparty.mybox": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/EditorModules/com.thirdparty.mybox",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.ide.visualstudio": "2.0.12",
     "com.unity.ide.vscode": "1.2.4",
@@ -34,9 +38,6 @@
     "com.unity.modules.unitywebrequestwww": "1.0.0",
     "com.unity.modules.vehicles": "1.0.0",
     "com.unity.modules.video": "1.0.0",
-    "com.unity.modules.wind": "1.0.0",
-    "com.components.ui":"https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.components.ui",
-    "com.datastructures":"https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.datastructures",
-    "com.thirdparty.mybox":"https://github.com/wajahatdeveloper/Modules.git?path=/Assets/EditorModules/com.thirdparty.mybox"
+    "com.unity.modules.wind": "1.0.0"
   }
 }
