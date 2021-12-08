@@ -1,5 +1,33 @@
 {
   "dependencies": {
+    "com.components.ui": {
+      "version": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.components.ui",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.thirdparty.mybox": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.thirdparty.mybox#v1.0.0",
+        "com.datastructures": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.datastructures#v1.0.0"
+      },
+      "hash": "156fb2a429208dd1fe8ccb2aee199bb8cda7658f"
+    },
+    "com.datastructures": {
+      "version": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.datastructures",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "156fb2a429208dd1fe8ccb2aee199bb8cda7658f"
+    },
+    "com.thirdparty.mybox": {
+      "version": "https://github.com/wajahatdeveloper/Modules.git?path=/Assets/EditorModules/com.thirdparty.mybox",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.ai": "1.0.0",
+        "com.unity.modules.physics2d": "1.0.0"
+      },
+      "hash": "b171dbf4ef7480a6b045ddcf2b9cd5b4f7b4157d"
+    },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 2,

@@ -34,6 +34,9 @@
     "com.unity.modules.unitywebrequestwww": "1.0.0",
     "com.unity.modules.vehicles": "1.0.0",
     "com.unity.modules.video": "1.0.0",
-    "com.unity.modules.wind": "1.0.0"
+    "com.unity.modules.wind": "1.0.0",
+    "com.components.ui":"https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.components.ui",
+    "com.datastructures":"https://github.com/wajahatdeveloper/Modules.git?path=/Assets/com.datastructures",
+    "com.thirdparty.mybox":"https://github.com/wajahatdeveloper/Modules.git?path=/Assets/EditorModules/com.thirdparty.mybox"
   }
 }
