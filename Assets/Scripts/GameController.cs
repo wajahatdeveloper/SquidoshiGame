@@ -1,9 +1,17 @@
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
-public class GameController : Controller<GameModel,GameView>
+public class GameController : Controller<GameModel, GameView>
 {
+    List<PlayerData> players = new List<PlayerData>();
+    private void Awake()
+    {
+        TextAsset asset = Resources.Load<TextAsset>("Data");
+        players = JsonConvert.DeserializeObject<List<PlayerData>>(asset.text);
+    }
     public void OnClick_Play()
     {
         Debug.Log("Game Started");
