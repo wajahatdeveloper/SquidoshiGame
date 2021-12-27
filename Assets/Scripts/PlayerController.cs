@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class PlayerController : MonoBehaviour
 
     public Actions punchActions;
     public Actions kickActions;
+
+    public GameModel gameModel;
+
+    public UnityEvent onKilled;
 
     private void Update()
     {
@@ -61,5 +66,18 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Equipping Sword");
         StartCoroutine(characterMelee.Draw(sword));
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("MonsterAttack"))
+        {
+            gameModel.playerHp -= gameModel.monsterAttackDamage;
+
+            if (gameModel.playerHp <= 0)
+            {
+                onKilled?.Invoke();
+            }
+        }
     }
 }
