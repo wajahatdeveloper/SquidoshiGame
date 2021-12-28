@@ -1,12 +1,14 @@
 using BehaviorDesigner.Runtime;
 using GameCreator.Core;
 using System;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameController : Controller<GameModel,GameView>
+public class GameController : Controller<GameModel, GameView>
 {
     public Actions restorePlayer;
 
@@ -22,6 +24,12 @@ public class GameController : Controller<GameModel,GameView>
 
     public int monsterFightIndex = 0;
 
+    List<PlayerData> players = new List<PlayerData>();
+    private void Awake()
+    {
+        TextAsset asset = Resources.Load<TextAsset>("Data");
+        players = JsonConvert.DeserializeObject<List<PlayerData>>(asset.text);
+    }
     public void OnClick_Play()
     {
         Debug.Log("Game Started");
