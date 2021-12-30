@@ -84,7 +84,7 @@ public class GameController : Controller<GameModel, GameView>
     {
         monster.GetComponent<BehaviorTree>().DisableBehavior();
         monster.GetComponent<Animator>().Play("Dead");
-        NextFight();
+        Invoke(nameof(NextFight), 8.0f);
     }
 
     public void OnWin()
