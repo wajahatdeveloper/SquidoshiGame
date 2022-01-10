@@ -10,7 +10,7 @@ AnimatorOverrideController:
   m_Controller: {fileID: 9100000, guid: 7e5e3872d84174d9a9ddf67745628fb5, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 74076314913792274, guid: 01d1638444abf44ee88e83c8ca7abdaa, type: 2}
-    m_OverrideClip: {fileID: 74727638662924100, guid: d3ef6324613b544c69284199c7e11443, type: 2}
+    m_OverrideClip: {fileID: 1419879912259550416, guid: beab83ab9636e5647a9024f1c8a5798e, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

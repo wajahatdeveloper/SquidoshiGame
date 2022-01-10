@@ -59,12 +59,14 @@ public class GameController : Controller<GameModel, GameView>
     {
         Debug.Log("Game Paused");
         view.pausePanel.SetActive(true);
+        Time.timeScale = 0.0000000000001f;
     }
 
     public void OnClick_Resume()
     {
         Debug.Log("Game Resumed");
         view.pausePanel.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void OnClick_Retry()
