@@ -7,6 +7,7 @@ public class GameView : View
 {
     public GameModel gameModel;
     public Image playerHp;
+    public Text playerHpText;
 
     public GameObject mainMenuPanel;
     public GameObject settingsPanel;
@@ -17,5 +18,6 @@ public class GameView : View
     private void Update()
     {
         playerHp.fillAmount = Mathf.InverseLerp(0, 100, gameModel.playerHp);
+        playerHpText.text = $"{gameModel.playerHp}/100";
     }
 }

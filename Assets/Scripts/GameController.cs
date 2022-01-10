@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : Controller<GameModel, GameView>
 {
@@ -25,11 +26,20 @@ public class GameController : Controller<GameModel, GameView>
     public int monsterFightIndex = 0;
 
     List<PlayerData> players = new List<PlayerData>();
+
     private void Awake()
     {
         TextAsset asset = Resources.Load<TextAsset>("Data");
         players = JsonConvert.DeserializeObject<List<PlayerData>>(asset.text);
+        LoadingPanel.Instance.Show();
+        this.Invoke(() => LoadingPanel.Instance.Hide(),(Application.isEditor)?1.0f:8.0f);
     }
+
+    private void Start()
+    {
+        AudioManager.Instance.ResetData();
+    }
+
     public void OnClick_Play()
     {
         Debug.Log("Game Started");
@@ -59,7 +69,7 @@ public class GameController : Controller<GameModel, GameView>
 
     public void OnClick_Retry()
     {
-        // Restart Current Fight
+        SceneManager.LoadScene(0);
     }
 
     public void StartMonsterFight_Small()

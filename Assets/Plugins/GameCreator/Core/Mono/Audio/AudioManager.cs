@@ -5,7 +5,7 @@
 	using UnityEngine;
     using UnityEngine.Audio;
 
-    [AddComponentMenu("Game Creator/Managers/AudioManager", 100)]
+    [AddComponentMenu("Game Creator/Managers/AudioManager", 1)]
 	public class AudioManager : Singleton<AudioManager>, IGameSave
 	{
 		[System.Serializable]
