@@ -368,7 +368,7 @@ BlendTree:
   m_Name: Dashing
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 74655201844839838, guid: a94b9a3d5b0ac4bc98b504a240689527, type: 2}
+    m_Motion: {fileID: -2341027594253812581, guid: eec40357760bad340918dff03fdccee1, type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -376,7 +376,7 @@ BlendTree:
     m_DirectBlendParameter: MoveForward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 74817274452924804, guid: a94b9a3d5b0ac4bc98b504a240689527, type: 2}
+    m_Motion: {fileID: -2341027594253812581, guid: eec40357760bad340918dff03fdccee1, type: 3}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -384,7 +384,7 @@ BlendTree:
     m_DirectBlendParameter: MoveForward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 74326893719215212, guid: a94b9a3d5b0ac4bc98b504a240689527, type: 2}
+    m_Motion: {fileID: -2341027594253812581, guid: eec40357760bad340918dff03fdccee1, type: 3}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -392,7 +392,7 @@ BlendTree:
     m_DirectBlendParameter: MoveForward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 74645545148672480, guid: a94b9a3d5b0ac4bc98b504a240689527, type: 2}
+    m_Motion: {fileID: -2341027594253812581, guid: eec40357760bad340918dff03fdccee1, type: 3}
     m_Threshold: 1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1

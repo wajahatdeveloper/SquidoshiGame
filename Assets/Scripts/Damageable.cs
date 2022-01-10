@@ -18,11 +18,13 @@ public class Damageable : MonoBehaviour
 
     public UnityEvent<GameObject> onKilled;
 
+    private bool isDead = false;
+
     private void Update()
     {
         hpSlider.value = hp;
 
-        if (hp <= 0)
+        if (hp <= 0 && !isDead)
         {
             Die();
         }
@@ -30,6 +32,7 @@ public class Damageable : MonoBehaviour
 
     private void Die()
     {
+        isDead = true;
         Debug.Log($"{gameObject.name} Dead");
         onKilled?.Invoke(gameObject);
     }
